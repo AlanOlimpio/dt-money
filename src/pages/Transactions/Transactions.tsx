@@ -8,7 +8,7 @@ import {
   TransactionsContainer,
   TransactionsTable,
 } from './TransactionsStyles';
-import { TransactionsContext } from '../../contexts/ TransactionsContext';
+import { TransactionsContext } from '../../contexts/TransactionsContext';
 import { dateFormatter, priceFormatter } from '../../utils/formatter';
 
 function Transactions() {
