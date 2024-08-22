@@ -3,6 +3,7 @@ import { SummaryCard, SummaryContainer } from './SummaryStyles';
 import { defaultTheme } from '../../styles/themes/default';
 import { useContext } from 'react';
 import { TransactionsContext } from '../../contexts/ TransactionsContext';
+import { priceFormatter } from '../../utils/formatter';
 
 function Summary() {
   const { transactions } = useContext(TransactionsContext);
@@ -32,21 +33,21 @@ function Summary() {
           <span>Entradas</span>
           <ArrowCircleUp size={32} color={defaultTheme['green-300']} />
         </header>
-        <strong>{summary.income}</strong>
+        <strong>{priceFormatter.format(summary.income)}</strong>
       </SummaryCard>
       <SummaryCard>
         <header>
           <span>Saídas</span>
           <ArrowCircleDown size={32} color={defaultTheme['red-300']} />
         </header>
-        <strong>{summary.outcome}</strong>
+        <strong>{priceFormatter.format(summary.outcome)}</strong>
       </SummaryCard>
       <SummaryCard variant="green">
         <header>
           <span>Total</span>
           <CurrencyDollar size={32} color={defaultTheme.white} />
         </header>
-        <strong>{summary.total}</strong>
+        <strong>{priceFormatter.format(summary.total)}</strong>
       </SummaryCard>
     </SummaryContainer>
   );
