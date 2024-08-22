@@ -1,15 +1,12 @@
-import {
-  HeaderContainer,
-  HeaderContent,
-  NewTrasactionButton,
-} from './HeaderStyles';
+import { HeaderContainer, HeaderContent } from './HeaderStyles';
 import logoImg from '../../assets/logo.svg';
+import NewTransactionModal from '../NewTransactionModal';
 function Header() {
   return (
     <HeaderContainer>
       <HeaderContent>
         <img src={logoImg} alt="" />
-        <NewTrasactionButton>Nova transação</NewTrasactionButton>
+        <NewTransactionModal />
       </HeaderContent>
     </HeaderContainer>
   );
