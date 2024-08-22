@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { css } from 'styled-components';
 
 interface SummaryCardProps {
-  variant?: 'green';
+  $variant?: 'green';
 }
 
 export const SummaryContainer = styled.section`
@@ -16,8 +16,8 @@ export const SummaryContainer = styled.section`
 `;
 
 export const SummaryCard = styled.div<SummaryCardProps>`
-  ${({ theme, variant }) => css`
-    background-color: ${variant !== 'green'
+  ${({ theme, $variant }) => css`
+    background-color: ${$variant !== 'green'
       ? theme['gray-600']
       : theme['green-700']};
     border-radius: 6px;

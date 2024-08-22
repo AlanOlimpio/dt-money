@@ -26,7 +26,7 @@ function Transactions() {
                 <tr key={transaction.id}>
                   <ListTd width="50%">{transaction.description}</ListTd>
                   <ListTd>
-                    <PrinceHighLight variant={transaction.type}>
+                    <PrinceHighLight $variant={transaction.type}>
                       {transaction.type === 'outcome' && '- '}
                       {priceFormatter.format(transaction.price)}
                     </PrinceHighLight>

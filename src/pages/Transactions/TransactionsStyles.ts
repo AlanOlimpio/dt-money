@@ -5,7 +5,7 @@ interface listProps {
 }
 
 interface PrinceHighLightProps {
-  variant: 'income' | 'outcome';
+  $variant: 'income' | 'outcome';
 }
 
 export const TransactionsContainer = styled.div`
@@ -42,7 +42,7 @@ export const ListTd = styled.td<listProps>`
 `;
 
 export const PrinceHighLight = styled.span<PrinceHighLightProps>`
-  ${({ theme, variant }) => css`
-    color: ${variant === 'income' ? theme['green-300'] : theme['red-300']};
+  ${({ theme, $variant }) => css`
+    color: ${$variant === 'income' ? theme['green-300'] : theme['red-300']};
   `}
 `;
