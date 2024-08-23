@@ -60,6 +60,7 @@ function NewTransactionModal() {
       <Dialog.Portal>
         <Overlay />
         <Content>
+          <Dialog.Description />
           <Dialog.Title>Nova transação</Dialog.Title>
           <CloseButtom>
             <X size={24} />
