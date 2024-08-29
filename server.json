@@ -1,20 +1,292 @@
 {
-    "transactions": [
-      {
-        "id": 1, 
-        "description": "Desenvolvimento de site" ,
-        "type": "income",
-        "category": "Venda",
-        "price": 12000,
-        "createdAt": "2022-07-29T19:36:44.505Z"
-      },
-      {
-        "id": 2,
-        "description": "Hambúrguer",
-        "type": "outcome",
-        "category": "Alimentação",
-        "price": 59,
-        "createdAt": "2022-07-29T19:30:44.505Z"
-      }
-    ]
-  }
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 12000,
+      "createdAt": "2024-08-23T19:36:44.505Z"
+    },
+    {
+      "id": 2,
+      "description": "Hambúrguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 59,
+      "createdAt": "2024-08-23T19:30:44.505Z"
+    },
+    {
+      "id": 3,
+      "description": "Aluguel do apartamento",
+      "type": "outcome",
+      "category": "Casa",
+      "price": 1200,
+      "createdAt": "2024-07-28T18:42:44.642Z"
+    },
+    {
+      "id": 4,
+      "description": "Computador",
+      "type": "income",
+      "category": "Venda",
+      "price": 5400,
+      "createdAt": "2024-07-27T18:42:44.642Z"
+    },
+    {
+      "id": 5,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 8000,
+      "createdAt": "2024-07-26T18:42:44.642Z"
+    },
+    {
+      "id": 6,
+      "description": "Janta",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 39,
+      "createdAt": "2024-07-25T18:42:44.642Z"
+    },
+    {
+      "id": 7,
+      "description": "Aluguel do apartamento",
+      "type": "outcome",
+      "category": "Casa",
+      "price": 1200,
+      "createdAt": "2024-07-24T18:42:44.642Z"
+    },
+    {
+      "id": 8,
+      "description": "Salário",
+      "type": "income",
+      "category": "Salário",
+      "price": 5400,
+      "createdAt": "2024-07-23T18:42:44.642Z"
+    },
+    {
+      "id": 9,
+      "description": "Almoço",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 30,
+      "createdAt": "2024-07-22T18:42:44.642Z"
+    },
+    {
+      "id": 10,
+      "description": "Fone de ouvido",
+      "type": "outcome",
+      "category": "Itens",
+      "price": 150,
+      "createdAt": "2024-07-28T18:42:44.642Z"
+    },
+    {
+      "id": 11,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 12000,
+      "createdAt": "2024-08-23T19:36:44.505Z"
+    },
+    {
+      "id": 12,
+      "description": "Hambúrguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 59,
+      "createdAt": "2024-07-23T19:30:44.505Z"
+    },
+    {
+      "id": 13,
+      "description": "Aluguel do apartamento",
+      "type": "outcome",
+      "category": "Casa",
+      "price": 1200,
+      "createdAt": "2024-07-28T18:42:44.642Z"
+    },
+    {
+      "id": 14,
+      "description": "Computador",
+      "type": "income",
+      "category": "Venda",
+      "price": 5400,
+      "createdAt": "2024-07-27T18:42:44.642Z"
+    },
+    {
+      "id": 15,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 8000,
+      "createdAt": "2024-07-26T18:42:44.642Z"
+    },
+    {
+      "id": 16,
+      "description": "Janta",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 39,
+      "createdAt": "2024-07-25T18:42:44.642Z"
+    },
+    {
+      "id": 17,
+      "description": "Aluguel do apartamento",
+      "type": "outcome",
+      "category": "Casa",
+      "price": 1200,
+      "createdAt": "2024-07-24T18:42:44.642Z"
+    },
+    {
+      "id": 18,
+      "description": "Salário",
+      "type": "income",
+      "category": "Salário",
+      "price": 5400,
+      "createdAt": "2024-07-23T18:42:44.642Z"
+    },
+    {
+      "id": 19,
+      "description": "Almoço",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 30,
+      "createdAt": "2024-07-22T18:42:44.642Z"
+    },
+    {
+      "id": 20,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 12000,
+      "createdAt": "2024-08-23T19:36:44.505Z"
+    },
+    {
+      "id": 21,
+      "description": "Fone de ouvido",
+      "type": "outcome",
+      "category": "Itens",
+      "price": 150,
+      "createdAt": "2024-07-28T18:42:44.642Z"
+    },
+    {
+      "id": 22,
+      "description": "Hambúrguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 59,
+      "createdAt": "2024-07-23T19:30:44.505Z"
+    },
+    {
+      "id": 23,
+      "description": "Aluguel do apartamento",
+      "type": "outcome",
+      "category": "Casa",
+      "price": 1200,
+      "createdAt": "2024-07-28T18:42:44.642Z"
+    },
+    {
+      "id": 24,
+      "description": "Computador",
+      "type": "income",
+      "category": "Venda",
+      "price": 5400,
+      "createdAt": "2024-07-27T18:42:44.642Z"
+    },
+    {
+      "id": 25,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 8000,
+      "createdAt": "2024-07-26T18:42:44.642Z"
+    },
+    {
+      "id": 26,
+      "description": "Janta",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 39,
+      "createdAt": "2024-07-25T18:42:44.642Z"
+    },
+    {
+      "id": 27,
+      "description": "Aluguel do apartamento",
+      "type": "outcome",
+      "category": "Casa",
+      "price": 1200,
+      "createdAt": "2024-07-24T18:42:44.642Z"
+    },
+    {
+      "id": 28,
+      "description": "Salário",
+      "type": "income",
+      "category": "Salário",
+      "price": 5400,
+      "createdAt": "2024-07-23T18:42:44.642Z"
+    },
+    {
+      "id": 29,
+      "description": "Almoço",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 30,
+      "createdAt": "2024-07-22T18:42:44.642Z"
+    },
+    {
+      "id": 30,
+      "description": "Fone de ouvido",
+      "type": "outcome",
+      "category": "Itens",
+      "price": 150,
+      "createdAt": "2024-07-28T18:42:44.642Z"
+    },
+    {
+      "id": 31,
+      "description": "Salário",
+      "type": "income",
+      "category": "Salário",
+      "price": 5400,
+      "createdAt": "2024-07-23T18:42:44.642Z"
+    },
+    {
+      "id": 32,
+      "description": "Almoço",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 30,
+      "createdAt": "2024-07-22T18:42:44.642Z"
+    },
+    {
+      "id": 33,
+      "description": "Fone de ouvido",
+      "type": "outcome",
+      "category": "Itens",
+      "price": 150,
+      "createdAt": "2024-07-28T18:42:44.642Z"
+    },
+    {
+      "description": "Teste",
+      "price": 5000,
+      "category": "Carro",
+      "type": "income",
+      "createdAt": "2024-08-26T21:14:43.948Z",
+      "id": 34
+    },
+    {
+      "description": "Venda do carro",
+      "price": 3000,
+      "category": "Carro",
+      "type": "income",
+      "createdAt": "2024-08-26T21:16:36.114Z",
+      "id": 35
+    },
+    {
+      "description": "Salgadinho",
+      "price": 100,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-08-29T19:00:21.503Z",
+      "id": 36
+    }
+  ]
+}

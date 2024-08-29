@@ -10,9 +10,10 @@ import {
 } from './TransactionsStyles';
 import { TransactionsContext } from '../../contexts/TransactionsContext';
 import { dateFormatter, priceFormatter } from '../../utils/formatter';
+import Pagination from '../../components/Pagination';
 
 function Transactions() {
-  const { transactions } = useContext(TransactionsContext);
+  const { transactions, page, pages, total } = useContext(TransactionsContext);
   return (
     <div>
       <Header />
@@ -40,6 +41,7 @@ function Transactions() {
             })}
           </tbody>
         </TransactionsTable>
+        {total > 0 && <Pagination page={page} pages={pages} />}
       </TransactionsContainer>
     </div>
   );

@@ -3,8 +3,8 @@ import { MagnifyingGlass } from 'phosphor-react';
 import { SearchFormContainer } from './SearchFormStyles';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { useContext } from 'react';
-import { TransactionsContext } from '../../../../contexts/TransactionsContext';
+import { useSearchParams } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const searchFormSchema = z.object({
   query: z.string(),
@@ -16,16 +16,36 @@ function SearchForm() {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { isSubmitting },
   } = useForm<SearchFormInputs>({
     resolver: zodResolver(searchFormSchema),
   });
 
-  const { fetchTransactions } = useContext(TransactionsContext);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const querySearch = searchParams.get('q') ? searchParams.get('q') : undefined;
 
   async function handleSearchTransactions(data: SearchFormInputs) {
-    await fetchTransactions(data.query);
+    if (data.query) {
+      searchParams.delete('page');
+      setSearchParams((params) => {
+        params.set('q', data.query);
+
+        return params;
+      });
+    }
+    if (!data.query) {
+      searchParams.delete('q');
+      setSearchParams(searchParams);
+    }
   }
+
+  useEffect(() => {
+    if (querySearch) {
+      setValue('query', querySearch);
+    }
+  }, [querySearch]);
+
   return (
     <SearchFormContainer onSubmit={handleSubmit(handleSearchTransactions)}>
       <input
