@@ -36,6 +36,7 @@ function SearchForm() {
     }
     if (!data.query) {
       searchParams.delete('q');
+      searchParams.delete('page');
       setSearchParams(searchParams);
     }
   }

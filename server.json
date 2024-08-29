@@ -287,6 +287,14 @@
       "type": "outcome",
       "createdAt": "2024-08-29T19:00:21.503Z",
       "id": 36
+    },
+    {
+      "description": "Apartamento",
+      "price": 100000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2024-08-29T22:22:39.046Z",
+      "id": 37
     }
   ]
 }

@@ -13,7 +13,16 @@ import { dateFormatter, priceFormatter } from '../../utils/formatter';
 import Pagination from '../../components/Pagination';
 
 function Transactions() {
-  const { transactions, page, pages, total } = useContext(TransactionsContext);
+  const { transactions, page, pages, total, isLoading } =
+    useContext(TransactionsContext);
+  if (isLoading) {
+    return <>Loading ...</>;
+  }
+
+  if (!transactions) {
+    return null;
+  }
+
   return (
     <div>
       <Header />
@@ -41,7 +50,7 @@ function Transactions() {
             })}
           </tbody>
         </TransactionsTable>
-        {total > 0 && <Pagination page={page} pages={pages} />}
+        {!isLoading && total > 0 && <Pagination page={page} pages={pages} />}
       </TransactionsContainer>
     </div>
   );
