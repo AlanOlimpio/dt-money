@@ -6,13 +6,31 @@ interface SummaryCardProps {
 }
 
 export const SummaryContainer = styled.section`
-  width: 100%;
-  max-width: 1120px;
-  margin: -5rem auto 0;
-  padding: 0 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  ${({ theme }) => css`
+    width: 100%;
+    max-width: 1120px;
+    margin: -5rem auto 0;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+    &::-webkit-scrollbar {
+      width: 8px !important;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: ${theme['gray-800']};
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: ${theme['gray-600']};
+      border-radius: 8px;
+    }
+  `}
 `;
 
 export const SummaryCard = styled.div<SummaryCardProps>`

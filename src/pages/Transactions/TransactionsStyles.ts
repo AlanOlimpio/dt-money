@@ -64,3 +64,27 @@ export const LoadingContainer = styled.div`
 export const InfiniteRotate = styled.div`
   animation: ${rotate} 0.75s linear infinite;
 `;
+
+export const TableContainer = styled.div`
+  ${({ theme }) => css`
+    width:100% 
+    overflow-x: scroll;
+    overflow-y: auto;
+    padding-bottom: 1rem;
+     &::-webkit-scrollbar {
+      width: 8px !important;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: ${theme['gray-800']};
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: ${theme['gray-600']};
+      border-radius: 8px;
+    }
+
+  `}
+`;

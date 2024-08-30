@@ -16,4 +16,9 @@ export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    img {
+      width: 132px;
+    }
+  }
 `;

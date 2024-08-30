@@ -20,6 +20,12 @@ export const NewTrasactionButton = styled.button`
     &:hover {
       background: ${theme['gray-700']};
     }
+
+    @media only screen and (max-width: 768px) {
+      height: 32px;
+      font-size: 0.875rem;
+      padding: 0px 0.875rem;
+    }
   `}
 `;
 
@@ -33,7 +39,8 @@ export const Overlay = styled(Dialog.Overlay)`
 
 export const Content = styled(Dialog.Content)`
   ${({ theme }) => css`
-    min-width: 32rem;
+    width: 100%;
+    max-width: 32rem;
     border-radius: 6px;
     padding: 2rem 3rem;
     background-color: ${theme['gray-800']};
@@ -42,6 +49,10 @@ export const Content = styled(Dialog.Content)`
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 5px 2px rgb(0, 0, 0, 0.6);
+    @media only screen and (max-width: 768px) {
+      padding: 2rem 1.5rem;
+      width: 90%;
+    }
 
     form {
       margin-top: 2rem;
