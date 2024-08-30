@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 interface listProps {
   width?: '10%' | '20%' | '30%' | '40%' | '50%';
@@ -7,6 +7,12 @@ interface listProps {
 interface PrinceHighLightProps {
   $variant: 'income' | 'outcome';
 }
+
+const rotate = keyframes`
+100%{
+    transform: rotate(360deg);
+   }
+`;
 
 export const TransactionsContainer = styled.div`
   width: 100%;
@@ -45,4 +51,16 @@ export const PrinceHighLight = styled.span<PrinceHighLightProps>`
   ${({ theme, $variant }) => css`
     color: ${$variant === 'income' ? theme['green-300'] : theme['red-300']};
   `}
+`;
+
+export const LoadingContainer = styled.div`
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const InfiniteRotate = styled.div`
+  animation: ${rotate} 0.75s linear infinite;
 `;
